@@ -4,16 +4,11 @@ Welcome to the Movie Ticket Booking App, a web application built using the MERN 
 
 ## Technologies Used
 
-- **Frontend:**
-  - React.js
-  - React Router DOM (for page routing)
-
-- **Backend:**
-  - Express.js
-  - Node.js
-
-- **Database:**
-  - MongoDB (connected using Mongoose)
+- **Frontend:** React.js, React Router DOM  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB with Mongoose ODM  
+- **Testing:** Jest, Supertest (backend), React Testing Library (frontend)  
+- **Deployment:** Local environment (instructions below)
 
 ## Components
 
@@ -39,6 +34,33 @@ Welcome to the Movie Ticket Booking App, a web application built using the MERN 
      - Paytm: Allows users to spend money from their digital wallet.
      - Google Pay: Users can scan a QR code to make payment.
    - Upon successful payment, users receive a soft copy of their tickets.
+
+## Features
+
+- **User Authentication:** Secure signup and login with JWT-based session management.
+- **Movie & Show Listings:** Browse movies, venues, and show timings.
+- **Personalized Seating Algorithm:**  
+  - VIP and accessible seating zones.  
+  - Groups of 2–7 seated together without splitting.  
+  - Avoid solo attendees between groups except for special seats.  
+  - Randomly unavailable/broken seats handled dynamically.  
+  - Age-restricted zones (e.g., no children allowed).  
+  - Flexible seating for elderly users.  
+  - Admin override to bypass seating rules.
+- **Payment Integration:**  
+  - Credit Card (with validation).  
+  - Paytm wallet payments.  
+  - Google Pay via QR code scanning.
+- **Booking Management:** Users can cancel and reschedule bookings; seat reallocation handled automatically.
+
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/movie-ticket-app.git
+
 
 ## Installation
 
